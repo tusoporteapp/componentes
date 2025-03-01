@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Últimas Publicaciones del Blog</h1>
+        <div class="row" id="blog-posts"></div>
+        <div class="toast align-items-center hide" role="alert" data-bs-animation="false" id="blogToast" style="position:fixed;top:20px;right:20px;">
+            <div class="toast-body" role="alert"></div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="blogOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTitle"></h5><button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body" id="offcanvasContent"></div>
+        </div>
+    </div><button class="btn btn-success">Actualizar Blog</button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
