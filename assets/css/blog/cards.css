@@ -1,0 +1,65 @@
+/* ✅ Configuración de las tarjetas del blog */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  overflow: hidden;
+}
+
+/* ✅ Asegura que todas las imágenes sean del mismo tamaño */
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ✅ Títulos de las tarjetas */
+
+.card-title {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: bold;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3.6em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* ✅ Extracto de la tarjeta */
+
+.card-text {
+  font-size: 1rem;
+  color: #444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* ✅ Ajusta la estructura de la tarjeta */
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Botón de "Leer más" siempre alineado abajo */
+
+.card-body button {
+  margin-top: auto;
+}
+
+/* ✅ Ajustes para móviles */
+
+@media (max-width: 768px) {
+  .card-text {
+    -webkit-line-clamp: 2;
+  }
+}
+
