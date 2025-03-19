@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<manifest identifier="Curso_ID1" version="1.3"
+	  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+	  xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+	  xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+	  xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+	  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+						  http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+						  http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+						  http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+						  http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>2004 3rd Edition</schemaversion>
+		<adlcp:location>metadata.xml</adlcp:location>
+	</metadata>
+	
+	
+	<organizations default="Curso_ID1_ORG">
+		<organization identifier="Curso_ID1_ORG">
+			<!--****** Title ******-->
+			<title>Curso de aprendizaje electrónico de Captivate</title>
+			<item identifier="Curso_ID1_SCO" identifierref="Curso_ID1_SCO_RES" isvisible="true">
+				<!--****** Title ******-->
+				<title>index_SCO_Title</title>
+				<metadata>
+					<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM lom.xsd">
+						<general>
+							<description>
+				  				<string language="en-us">Course Description.</string> 
+				  			</description>
+						</general>
+					</lom>
+				</metadata>
+				<imsss:sequencing>
+				<imsss:objectives>
+					        <imsss:primaryObjective objectiveID="Quiz_2025319131424"/>
+				</imsss:objectives>
+					<imsss:deliveryControls tracked="true" completionSetByContent="true" objectiveSetByContent="true"/>
+				</imsss:sequencing>
+			</item>
+			<metadata>
+				<adlcp:location>metadata.xml</adlcp:location>
+			</metadata>			
+	<imsss:sequencing>
+				<imsss:controlMode choice="true" flow="true"/>
+                <imsss:rollupRules>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition condition="satisfied"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="satisfied"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition operator="not" condition="satisfied"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="notSatisfied"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition condition="completed"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="completed"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition operator="not" condition="completed"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="incomplete"/>
+                    </imsss:rollupRule>
+                </imsss:rollupRules>
+			</imsss:sequencing>
+		</organization>
+	</organizations>
+	<resources>
+		<resource adlcp:scormType="sco" identifier="Curso_ID1_SCO_RES" type="webcontent" href="index.html">
+			<metadata>
+				<adlcp:location>metadata.xml</adlcp:location>
+			</metadata>
+			
+			<file href="assets/htmlimages/Answer_checkbox_correct.png"></file>
+			<file href="index.html"></file>
+			<file href="scormdriver.js"/>
+			<file href="browsersniff.js"/>
+			
+<file href="assets/htmlimages/Answer_checkbox_incorrect.png"/> 
+<file href="assets/htmlimages/Answer_radio_correct.png"/> 
+<file href="assets/htmlimages/Answer_radio_incorrect.png"/> 
+<file href="assets/htmlimages/Download_certificate_icon.svg"/> 
+<file href="assets/htmlimages/img_trans.gif"/> 
+<file href="assets/js/project.js"/> 
+<file href="dist/main.chunk.js"/> 
+<file href="dist/main.chunk.js.br"/> 
+<file href="dist/runtime-main.bundle.js"/> 
+<file href="dist/vendors-main.chunk.js"/> 
+<file href="dist/vendors-main.chunk.js.LICENSE.txt"/> 
+<file href="dist/vendors-main.chunk.js.br"/> 
+<file href="dr/03118.svg"/> 
+<file href="dr/03165.svg"/> 
+<file href="dr/03212.svg"/> 
+<file href="dr/03259.svg"/> 
+<file href="dr/03306.svg"/> 
+<file href="dr/03353.svg"/> 
+<file href="dr/03416.png"/> 
+<file href="dr/03500.png"/> 
+<file href="dr/03584.png"/> 
+<file href="dr/03668.png"/> 
+<file href="dr/03752.png"/> 
+<file href="dr/03836.png"/> 
+<file href="dr/03896.svg"/> 
+<file href="dr/03918.svg"/> 
+<file href="dr/3118.svg"/> 
+<file href="dr/3165.svg"/> 
+<file href="dr/3212.svg"/> 
+<file href="dr/3259.svg"/> 
+<file href="dr/3306.svg"/> 
+<file href="dr/3353.svg"/> 
+<file href="dr/loading.gif"/> 
+<file href="goodbye.html"/> 
+<file href="index.html"/> 
+<file href="Utilities.js"/> 
+            </resource>
+	</resources>
+</manifest>
